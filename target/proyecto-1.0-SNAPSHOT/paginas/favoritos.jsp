@@ -116,9 +116,17 @@
         <div class="favourites">
 
           <div class="img-container">
-            <img src="../imagenes/img3.PNG" alt="torre_hanoi" class="img">
+              <a href="../paginas/waterpuzle.jsp">
+                  <img src="../imagenes/Interfaz_juegos/water.jpg" alt="torre_hanoi" class="img">
             <span class="heart"><i class='bx bxs-heart'></i></span>
+            </a>
           </div>
+            
+            <style>
+                .img-container:hover {
+                    transform: scale(1.1);
+                }
+            </style>
 
         </div>
       </div>
