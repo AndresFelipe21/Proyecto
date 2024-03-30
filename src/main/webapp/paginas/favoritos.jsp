@@ -121,13 +121,15 @@
             <span class="heart"><i class='bx bxs-heart'></i></span>
             </a>
           </div>
-            
             <style>
                 .img-container:hover {
                     transform: scale(1.1);
                 }
+                
+                .img {
+                    border-radius: 15px; /* Hace que los bordes sean redondos */
+                }
             </style>
-
         </div>
       </div>
 
