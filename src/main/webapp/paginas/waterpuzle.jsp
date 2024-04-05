@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Water Sort Puzzle</title>
-    <link rel="stylesheet" href="../styles/waterpuzle.css ">
+    <link rel="stylesheet" href="../styles/waterpuzle.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -22,13 +22,16 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-            <div id="menu-heading" style="margin-top: -30px;">WATER SORT PUZZLE</div>
-            <div class="lvl1" id="easy" onclick="OpenLevel(0);">FACIL</div>
-            <div class="lvl2" id="medium" onclick="OpenLevel(1);">MEDIO</div>
-            <div class="lvl3" id="hard" onclick="OpenLevel(2);">DIFICIL</div>
-            <div class="lvl4" id="very-hard" onclick="OpenLevel(3)">MUY DIFICIL</div>
-            <div class="lvl5" id="impossible" onclick="OpenLevel(7);">IMPOSIBLE</div>
-            <div class="lvl6" id="extreme" onclick="OpenLevel(10);">EXTREMO</div>
+            <div id="menu-heading" style="margin-top: 10px;">WATER SORT PUZZLE</div>
+            <div class="lvl1" id="nivel1" onclick="OpenLevel(0);">NIVEL 1</div>
+            <div class="lvl2" id="nivel2" onclick="OpenLevel1(1);">NIVEL 2</div>
+            <div class="lvl3" id="nivel3" onclick="OpenLevel(2);">NIVEL 3</div>
+            <div class="lvl4" id="nivel4" onclick="OpenLevel(3)">NIVEL 4</div>
+            <div class="lvl5" id="nivel5" onclick="OpenLevel(7);">NIVEL 5</div>
+            <div class="lvl6" id="nivel6" onclick="OpenLevel1(10);">NIVEL 6</div>
+            <div class="lvl7" id="nivel7" onclick="OpenLevel1(10);">NIVEL 7</div>
+            <div class="lvl8" id="nivel8" onclick="OpenLevel1(10);">NIVEL 8</div>
+            <div class="lvl9" id="nivel9" onclick="OpenLevel1(10);">NIVEL 9</div>
             <br><br><br>
             <div id="rules-btn" onclick="ShowRules();">REGLAS</div>
         </div>
@@ -43,7 +46,6 @@
     </div>
 
     <script src="../javascript/waterpuzle.js" type="text/javascript" charset="utf-8" async defer></script>
-    <!-- Bootstrap JavaScript Bundle -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 
