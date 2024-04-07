@@ -1,11 +1,12 @@
 var game,level,color=["red","blue","yellow","green","purple","lightgreen","lightblue","orange","brown","pink","violet","black","darkblue","darkgreen"],water=[],w=[],currentLevel,clicked=[],transferring=false,t=false,size=1,sizechange=0.05,won=false,moves=0;
 var testTubePosition = {
-    0: [[-110,130], [-20, 130], [70, 130], [-65,320], [15, 320]],
-    1: [[-110,130], [-20, 130], [70, 130],[-110,320], [-20, 320], [70, 320]],
-    2: [[-140,130],[-60,130],[20,130],[100,130],[-110,320], [-20, 320], [70, 320]],
+    0: [[-110,130],[-20,130],[70,130],[-65,320],[15,320]],
+    1: [[-110,130],[-20,130],[70,130],[-110,320],[-20,320],[70,320]],
+    2: [[-140,130],[-60,130],[20,130],[100,130],[-110,320],[-20,320],[70,320]],
     3: [[-140,130],[-60,130],[20,130],[100,130],[-140,320],[-60,320],[20,320],[100,320]],
-    7: [[-140,100],[-60,100],[20,100],[100,100],[-140,275],[-60,275],[20,275],[100,275],[-140,450],[-60,450],[20,450],[100,450]],
-    10: [[-140,100],[-60,100],[20,100],[100,100],[-140,275],[-60,275],[20,275],[100,275],[-140,450],[-60,450],[20,450],[100,450],[-140,625],[-60,625],[20,625],[100,625]]
+    4: [[-140,130],[-80,130],[-20,130],[40,130],[100,130],[-130,320],[-60,320],[10,320],[80,320]],
+    5: [[-140,100],[-60,100],[20,100],[100,100],[-140,275],[-60,275],[20,275],[100,275],[-60,450],[20,450]],
+    6: [[-140,100],[-80,100],[-20,100],[40,100],[100,100],[-170,275],[-110,275],[-50,275],[10,275],[70,275],[130,275],[-140,450]]
 }
 
 window.onload = function() {
@@ -69,7 +70,7 @@ window.OpenLevel1 = function(x) {
 
 function ApplyInfo(a = water) {
     if (!won) {
-        let d=0,heading=["FACIL","MEDIO","DIFICIL","MUY DIFICIL","","","","IMPOSIBLE"][currentLevel];
+        let d=0,heading=["NIVEL 1","NIVEL 2","NIVEL 3","NIVEL 4","NIVEL 5","NIVEL 6","NIVEL 7","NIVEL 8"][currentLevel];
         level.innerHTML = `<div id = 'lvl-heading'>${heading}</div>`;
         for (let i of testTubePosition[currentLevel]) {
             level.innerHTML += `<div class = "test-tube" style="top:${i[1]}px;left:calc(50vw + ${i[0]}px);transform:rotate(0deg);" onclick="Clicked(${d});">
@@ -129,13 +130,6 @@ function TransferAnim(a,b) {
 }
 
 function Transfer(a,b) {
-    /* 
-    a represents the index of the glass from which water is to ne taken
-    b represents the index of the glass to which water is to be transferred
-    constraints:
-    b should have white
-    last element of a = last non-white element in b
-    */
     if (!water[b].includes("transparent") || water[a] == ["transparent","transparent","transparent","transparent"]) {
         moves-=1;
         document.getElementById("moves").innerHTML = "Movimientos: "+moves;
