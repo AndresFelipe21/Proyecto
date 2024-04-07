@@ -29,6 +29,13 @@
         <div class="menu-bar">
           <div class="menu">
             <ul class="menu-links">
+                
+                <li class="nav-link">
+                  <a href="../paginas/home.jsp">
+                  <i class='bx bx-bar-chart-alt-2 icon'></i>
+                  <span class="text nav-text">home</span>
+                </a>
+              </li>
 
               <li class="nav-link">
                   <a href="../paginas/infoPersonal.jsp">
