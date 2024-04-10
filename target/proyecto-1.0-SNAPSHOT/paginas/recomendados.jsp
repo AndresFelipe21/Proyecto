@@ -108,7 +108,7 @@
           <div class="play">
             <img src="../imagenes/Interfaz_juegos/torre_hanoi.PNG" alt="">
             <div class="btn-container">
-              <button class="btn">Jugar</button>
+                <a href="Hanoi.jsp"><button class="btn" >Jugar</button></a>
             </div>
           </div>
 

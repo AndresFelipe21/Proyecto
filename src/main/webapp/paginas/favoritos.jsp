@@ -96,7 +96,7 @@
           </div>
         </div>
 
-        <h2>Juedos de la semana</h2>
+        <h2>Juegos de la semana</h2>
         <div class="swiper mySwiper" id="container">
           <div class="swiper-wrapper" id="wrapper">
             <div class="swiper-slide" id="slide">
