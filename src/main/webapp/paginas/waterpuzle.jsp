@@ -24,14 +24,14 @@
             </div>
             <div id="menu-heading" style="margin-top: 10px;">WATER SORT PUZZLE</div>
             <div class="lvl1" id="nivel1" onclick="OpenLevel(0);">NIVEL 1</div>
-            <div class="lvl2" id="nivel2" onclick="OpenLevel1(1);">NIVEL 2</div>
+            <div class="lvl2" id="nivel2" onclick="OpenLevel(1);">NIVEL 2</div>
             <div class="lvl3" id="nivel3" onclick="OpenLevel(2);">NIVEL 3</div>
             <div class="lvl4" id="nivel4" onclick="OpenLevel(3)">NIVEL 4</div>
-            <div class="lvl5" id="nivel5" onclick="OpenLevel(7);">NIVEL 5</div>
-            <div class="lvl6" id="nivel6" onclick="OpenLevel1(10);">NIVEL 6</div>
-            <div class="lvl7" id="nivel7" onclick="OpenLevel1(10);">NIVEL 7</div>
-            <div class="lvl8" id="nivel8" onclick="OpenLevel1(10);">NIVEL 8</div>
-            <div class="lvl9" id="nivel9" onclick="OpenLevel1(10);">NIVEL 9</div>
+            <div class="lvl5" id="nivel5" onclick="OpenLevel(4);">NIVEL 5</div>
+            <div class="lvl6" id="nivel6" onclick="OpenLevel(5);">NIVEL 6</div>
+            <div class="lvl7" id="nivel7" onclick="OpenLevel(6);">NIVEL 7</div>
+            <div class="lvl8" id="nivel8" onclick="OpenLevel(7);">NIVEL 8</div>
+            <div class="lvl9" id="nivel9" onclick="OpenLevel(8);">NIVEL 9</div>
             <br><br><br>
             <div id="rules-btn" onclick="ShowRules();">REGLAS</div>
         </div>
