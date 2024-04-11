@@ -7,145 +7,158 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard - Funny Mind</title>
-    <link rel="stylesheet" href="../styles/favoritos.css" />
-    <link rel="stylesheet" href="../styles/sidebar.css">
     <link rel="stylesheet" href="../styles/arrow.css">
-    <link rel="stylesheet" href="../styles/sidebarFavoritos.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../styles/menu.css">
+  <link rel="stylesheet" href="../styles/favoritos.css">
   </head>
 
-  <body>
-
-    <div class="container">
-
-      <nav class="sidebar">
-
-        <header class="header">
-          <div class="image">
-              <img src="../imagenes/ususario.png" alt="Usuario" class="img-user">
-          </div>
-        </header>
-
-        <div class="menu-bar">
-          <div class="menu">
-            <ul class="menu-links">
-               <li class="nav-link">
-                  <a href="../paginas/home.jsp">
-                  <i class='bx bx-bar-chart-alt-2 icon'></i>
-                  <span class="text nav-text">home</span>
-                </a>
-              </li>
-
-
-              <li class="nav-link">
-                  <a href="../paginas/infoPersonal.jsp">
-                  <i class='bx bx-bar-chart-alt-2 icon'></i>
-                  <span class="text nav-text">Datos personales</span>
-                </a>
-              </li>
-
-              <li class="nav-link">
-                  <a href="../paginas/favoritos.jsp">
-                  <i class='bx bx-heart icon'></i>
-                  <span class="text nav-text">Favoritos</span>
-                </a>
-              </li>
-
-              <li class="nav-link">
-                  <a href="../paginas/recomendados.jsp">
-                  <i class='bx bx-home-alt icon'></i>
-                  <span class="text nav-text">Recomendados</span>
-                </a>
-              </li>
-
-              <li class="nav-link">
-                  <a href="../paginas/categorias.jsp">
-                  <i class='bx bx-bell icon'></i>
-                  <span class="text nav-text">Categorias</span>
-                </a>
-              </li>
-
-              <li class="nav-link">
-                  <a href="../paginas/estadisticas.jsp">
-                  <i class='bx bx-pie-chart-alt icon'></i>
-                  <span class="text nav-text">Estadisticas</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="bottom-content">
-            <ul class="bottom-links">
-              <li class="bottom-nav-link">
-                <a href="#">
-                  <i class='bx bx-log-out icon'></i>
-                  <span class="text nav-text">Logout</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <div class="favourites-container">
-
-        <div class="arrow-container">
-          <div class="arrow left left-2">
-              <a href="../paginas/home.jsp"><i class='bx bx-left-arrow-alt'></i>Volver</a>
-          </div>
-        </div>
-
-        <h2>Juegos de la semana</h2>
-        <div class="swiper mySwiper" id="container">
-          <div class="swiper-wrapper" id="wrapper">
-            <div class="swiper-slide" id="slide">
-              <img src="../imagenes/img1.PNG" alt="img 1">
+      <body>
+            <!-- contenedor principal de todo -->
+            <div class="container-fluid p-0 m-0">     
+                <div class="row">
+                    <!-- columna del navegador -->
+                    <div class="col-sm-12 col-xl-3 p-0 m-0 d-sm-block position-relative bg-primary">
+                        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1482b5">
+                        <div class="container-fluid">
+                        <div class="text-center">
+                            <img src="../imagenes/ususario.png" alt="Usuario" style="width: 30%" >
+                        </div>
+                        <a class="navbar-brand"  href="#">Menu</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse mt-5" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <i class="bx bx-home-alt icon d-inline-block" style="color: white"></i>
+                                <a class="nav-link active d-inline-block" aria-current="page" href="./home.jsp">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <i class="bx bx-bar-chart-alt-2 icon d-inline-block" style="color: white"></i>
+                                <a class="nav-link active d-inline-block" aria-current="page" href="./infoPersonal.jsp">Datos personales</a>
+                            </li>
+                            <li class="nav-item">
+                                <i class="bx bx-heart icon d-inline-block" style="color: white"></i>
+                                <a class="nav-link active d-inline-block" aria-current="page" href="./favoritos.jsp">Favoritos</a>
+                            </li>
+                            <li class="nav-item">
+                                <i class="bx bx-home-alt icon d-inline-block" style="color: white"></i>
+                                <a class="nav-link active d-inline-block" aria-current="page" href="./recomendados.jsp">Recomendados</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <i class="bx bx-bell icon d-inline-block" style="color: white"></i>
+                                <a class="nav-link dropdown-toggle d-inline-block" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorias
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- logica en clases para los eventos -->
+                                    <li><a  class="dropdown-item menu_Memoria" href="./categorias.jsp">Juegos de memoria</a></li>
+                                    <li><a  class="dropdown-item menu_Logica" href="./categorias.jsp">Juegos de Logica</a></li>
+                                    <li><a  class="dropdown-item menu_Logica" href="./categorias.jsp">Juegos de Acertijos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="bx bx-pie-chart-alt icon d-inline-block" style="color: white"></i>
+                                <a class="nav-link active d-inline-block" aria-current="page" href="./estadisticas.jsp">Estadistica</a>
+                            </li>
+                            <li class="nav-item mt-5">
+                                <i class="bx bx-log-out icon d-inline-block" style="color: white"></i>
+                                <a class="nav-link active d-inline-block" aria-current="page" href="../index.jsp">Salir</a>
+                            </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </nav>
+                </div>
+                    <!-- columna del contenido -->
+                    <div class="col-sm-12 col-xl-9 p-0 m-0 position-relative ">
+                        <div class="container-fluid text-center">
+                            <div class="row">
+                                <div class="row mt-5 mb-5">
+                                    <div class="arrow-container">
+                                        <div class="arrow left">
+                                            <a href="../paginas/home.jsp"><i class='bx bx-left-arrow-alt'></i>Volver</a>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="row mt-5 text-center ">
+                                <h1>Juegos de la semana</h1>
+                            </div>
+                            <div class="row">
+                                <div class="row">
+                                    <!-- Carrusel -->
+                                    <div id="carouselExampleIndicators" class="carousel slide text-center">
+                                        <div class="carousel-indicators">
+                                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                              <img src="../imagenes/Interfaz_juegos/torre_hanoi.PNG" class="d-block w-100 dimension" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                                  <a href="./Hanoi.jsp" class="btn btn-primary menu_Logica">Jugar</a>
+                                              </div>
+                                          </div>
+                                          <div class="carousel-item">
+                                              <img src="../imagenes/Interfaz_juegos/memoria.jpg" class="d-block w-100 dimension" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                                  <a href="../paginas/memoria.jsp" class="btn btn-primary menu_Memoria">Jugar</a>>
+                                              </div>
+                                          </div>
+                                          <div class="carousel-item">
+                                              <img src="../imagenes/Interfaz_juegos/water.jpg" class="d-block w-100 dimension" alt="...">
+                                              <div class="carousel-caption d-none d-md-block" >
+                                                  <a href="../paginas/waterpuzle.jsp" class="btn btn-primary menu_Acertijos">Jugar</a>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Next</span>
+                                        </button>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col">
+                                        <!-- favoritos <div class="favourites">
+                                          <div class="img-container">
+                                              <a href="../paginas/waterpuzle.jsp">
+                                                  <img src="../imagenes/Interfaz_juegos/water.jpg" alt="torre_hanoi" class="img">
+                                            <span class="heart"><i class='bx bxs-heart'></i></span>
+                                            </a>
+                                          </div>
+                                        </div>--> 
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- juego         <div class="row">
+                                <div class="colum">
+                                    <h2>Favoritos</h2>
+                                        <div class="favourites">
+                                          <div class="img-container">
+                                              <a href="../paginas/waterpuzle.jsp">
+                                                  <img src="../imagenes/Interfaz_juegos/water.jpg" alt="torre_hanoi" class="img">
+                                            <span class="heart"><i class='bx bxs-heart'></i></span>
+                                            </a>
+                                          </div>
+                                </div> 
+                            </div> 
+                        </div>-->
+                </div>
             </div>
-            <div class="swiper-slide" id="slide">
-              <img src="../imagenes/img2.PNG" alt="img 2">
-            </div>
-            <div class="swiper-slide" id="slide">
-              <img src="../imagenes/img3.PNG" alt="img 3">
-            </div>
-            <div class="swiper-slide" id="slide">
-              <img src="../imagenes/Interfaz_juegos/torre_hanoi.PNG" alt="img 2">
-            </div>
-          </div>
-
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-
-          <div class="swiper-pagination"></div>
-        </div>
-
-        <h2>Favoritos</h2>
-        <div class="favourites">
-
-          <div class="img-container">
-              <a href="../paginas/waterpuzle.jsp">
-                  <img src="../imagenes/Interfaz_juegos/water.jpg" alt="torre_hanoi" class="img">
-            <span class="heart"><i class='bx bxs-heart'></i></span>
-            </a>
-          </div>
-            <style>
-                .img-container:hover {
-                    transform: scale(1.1);
-                }
-                
-                .img {
-                    border-radius: 15px; /* Hace que los bordes sean redondos */
-                }
-            </style>
-        </div>
-      </div>
-
-    </div>
-
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="../javascript/slideFavoritos.mjs"></script>
-  </body>
-
-  </html>
+</body>
+</html>
