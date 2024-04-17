@@ -54,8 +54,8 @@
                                 <ul class="dropdown-menu">
                                     <!-- logica en clases para los eventos -->
                                     <li><a  class="dropdown-item menu_Memoria" href="./categorias.jsp">Juegos de memoria</a></li>
-                                    <li><a  class="dropdown-item menu_Logica" href="./categorias.jsp">Juegos de Logica</a></li>
-                                    <li><a  class="dropdown-item menu_Logica" href="./categorias.jsp">Juegos de Acertijos</a></li>
+                                    <li><a  class="dropdown-item menu_Logica" href="./categorias.jsp">Matematicos</a></li>
+                                    <li><a  class="dropdown-item menu_Logica" href="./categorias.jsp">Resolución de problemas</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">

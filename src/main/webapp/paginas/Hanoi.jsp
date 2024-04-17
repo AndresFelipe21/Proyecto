@@ -61,7 +61,15 @@
           <div class="row justify-content-between">
             <div class="col-4">
               <button type="button" id="confirmar" class="btn btn-success mt-2 mb-2 torres">Confirmar</button>
+              <!-- contenedor de movimientos -->
               <div id="movimientos"></div>
+              <!-- contenedor de tiempo -->
+              <div class="cronometro">
+                <div id="hms"></div>
+              </div>
+            </div>
+            <div class="col-4">
+                <a href="./home.jsp"><button type="button" class="btn btn-primary mt-2 mb-2 torres">Salir</button></a>
             </div>
             <div class="col-4">
               <button type="button" id="Reiniciar" class="btn btn-danger mt-2 mb-2 torres">Reiniciar</button>
@@ -98,7 +106,7 @@
       <ul class="mt-5">
         <li>Las fichas se mueven con los botones que tienen en la parte inferior</li>
         <li>El juego siempre escogera la primera ficha que este en la parte superior</li>
-        <li>Cuando creas que hayas terminado oprime en el boton <strong>Confirmar</strong> para confirmar si pasaste</li>
+        <li>Cuando creas que hayas terminado oprime en el boton <strong>Confirmar</strong> para confirmar si pasaste al siguiente nivel</li>
         <li>Trata de hacerlo en la menor cantidad de movimiento posibles</li>
         <li>El primer nivel te darán 10 puntos e ira incrementando por 10</li>
       </ul>

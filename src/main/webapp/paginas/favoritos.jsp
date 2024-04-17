@@ -21,8 +21,8 @@
             <div class="container-fluid p-0 m-0">     
                 <div class="row">
                     <!-- columna del navegador -->
-                    <div class="col-sm-12 col-xl-3 p-0 m-0 d-sm-block position-relative bg-primary">
-                        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1482b5">
+                    <div class="col-sm-12 col-xl-3 p-0 m-0 d-sm-block position-relative" style="background-color: #1482b5">
+                        <nav class="navbar navbar-expand-lg navbar-dark">
                         <div class="container-fluid">
                         <div class="text-center">
                             <img src="../imagenes/ususario.png" alt="Usuario" style="width: 30%" >
@@ -57,8 +57,8 @@
                                 <ul class="dropdown-menu">
                                     <!-- logica en clases para los eventos -->
                                     <li><a  class="dropdown-item menu_Memoria" href="./categorias.jsp">Juegos de memoria</a></li>
-                                    <li><a  class="dropdown-item menu_Logica" href="./categorias.jsp">Juegos de Logica</a></li>
-                                    <li><a  class="dropdown-item menu_Logica" href="./categorias.jsp">Juegos de Acertijos</a></li>
+                                    <li><a  class="dropdown-item menu_Logica" href="./categorias.jsp">Matematicos</a></li>
+                                    <li><a  class="dropdown-item menu_Logica" href="./categorias.jsp">Resolución de problemas</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -78,7 +78,7 @@
                     <div class="col-sm-12 col-xl-9 p-0 m-0 position-relative ">
                         <div class="container-fluid text-center">
                             <div class="row">
-                                <div class="row mt-5 mb-5">
+                                <div class="row mt-5 mb-3">
                                     <div class="arrow-container">
                                         <div class="arrow left">
                                             <a href="../paginas/home.jsp"><i class='bx bx-left-arrow-alt'></i>Volver</a>
@@ -86,13 +86,14 @@
                                       </div>
                                 </div>
                             </div>
-                            <div class="row mt-5 text-center ">
+                            <div class="row mb-5 text-center ">
                                 <h1>Juegos de la semana</h1>
                             </div>
                             <div class="row">
                                 <div class="row">
                                     <!-- Carrusel -->
-                                    <div id="carouselExampleIndicators" class="carousel slide text-center">
+                                    
+                                    <div id="carouselExampleIndicators" class="carousel slide text-center" style="width: 40%; margin-left: auto; margin-right: auto">
                                         <div class="carousel-indicators">
                                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -100,7 +101,7 @@
                                         </div>
                                         <div class="carousel-inner">
                                           <div class="carousel-item active">
-                                              <img src="../imagenes/Interfaz_juegos/torre_hanoi.PNG" class="d-block w-100 dimension" alt="...">
+                                              <img src="../imagenes/Interfaz_juegos/Hanoi.png" class="d-block w-100 dimension" alt="juego hanoi" width="100px">
                                               <div class="carousel-caption d-none d-md-block">
                                                   <a href="./Hanoi.jsp" class="btn btn-primary menu_Logica">Jugar</a>
                                               </div>
@@ -127,38 +128,23 @@
                                           <span class="visually-hidden">Next</span>
                                         </button>
                                       </div>
+                                    
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="row">
-                                    <div class="col">
-                                        <!-- favoritos <div class="favourites">
-                                          <div class="img-container">
-                                              <a href="../paginas/waterpuzle.jsp">
-                                                  <img src="../imagenes/Interfaz_juegos/water.jpg" alt="torre_hanoi" class="img">
-                                            <span class="heart"><i class='bx bxs-heart'></i></span>
-                                            </a>
-                                          </div>
-                                        </div>--> 
-                                    </div>
-                                </div>
+                            <div class="row mt-4">
+                                <h2 class="mb-3">Favoritos</h2>
+                                <div class="col">
+                                    <a href="../paginas/waterpuzle.jsp">
+                                        <img src="../imagenes/Interfaz_juegos/water.jpg" alt="juego de tubos de agua" style="border-radius: 10px">
+                                    </a>
+                                </div> 
                             </div>
                             
                         </div>
-                        <!-- juego         <div class="row">
-                                <div class="colum">
-                                    <h2>Favoritos</h2>
-                                        <div class="favourites">
-                                          <div class="img-container">
-                                              <a href="../paginas/waterpuzle.jsp">
-                                                  <img src="../imagenes/Interfaz_juegos/water.jpg" alt="torre_hanoi" class="img">
-                                            <span class="heart"><i class='bx bxs-heart'></i></span>
-                                            </a>
-                                          </div>
-                                </div> 
-                            </div> 
-                        </div>-->
+                                 
+                        
                 </div>
+            </div>
             </div>
 </body>
 </html>

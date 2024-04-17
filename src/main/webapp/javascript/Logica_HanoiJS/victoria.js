@@ -1,9 +1,10 @@
 import { columna3, discos, usuario_Guio } from "./torres2.js";
+import { parar } from "./tiempo.js";
 //validar la victoria, todas las fichas en la torre 3
 export function victoria_Hanoi(){
     //coger los elementos del contenerdor 
     const elementos = columna3.querySelectorAll('[class*="propiedad"]');
-    if(discos == elementos.length){
+    if(discos === elementos.length){
         usuario_Guio();
         document.getElementById("siguiente").style.display = "block";
         document.getElementById("glass").style.display = "block";

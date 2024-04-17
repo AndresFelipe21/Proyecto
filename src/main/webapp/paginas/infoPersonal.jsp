@@ -57,8 +57,8 @@
                                 <ul class="dropdown-menu">
                                     <!-- logica en clases para los eventos -->
                                     <li><a  class="dropdown-item menu_Memoria" href="./categorias.jsp">Juegos de memoria</a></li>
-                                    <li><a  class="dropdown-item menu_Logica" href="./categorias.jsp">Juegos de Logica</a></li>
-                                    <li><a  class="dropdown-item menu_Logica" href="./categorias.jsp">Juegos de Acertijos</a></li>
+                                    <li><a  class="dropdown-item menu_Logica" href="./categorias.jsp">Matematicos</a></li>
+                                    <li><a  class="dropdown-item menu_Logica" href="./categorias.jsp">Resolución de problemas</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -84,9 +84,6 @@
                                     <div class="arrow-container">
                                         <div class="arrow left">
                                             <a href="../paginas/home.jsp"><i class='bx bx-left-arrow-alt'></i>Volver</a>
-                                        </div>
-                                        <div class="arrow right">
-                                          <a href="personalDataTable.jsp">Siguiente<i class='bx bx-right-arrow-alt'></i></a>
                                         </div>
                                       </div>
                                 </div>

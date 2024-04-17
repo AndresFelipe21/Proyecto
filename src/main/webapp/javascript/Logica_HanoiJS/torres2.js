@@ -2,6 +2,7 @@
 import { niveles, juego_Perfecto, reinicio_Total, instruccion } from "./niveles.js";
 import { discos_Multiples, borrarDiscos, cambio_Contenedor } from "./animacion.js";
 import { victoria_Hanoi, reiniciado, cerrando } from "./victoria.js";
+import { tiempo_Cargado, parar, tiempo_Transcurrido, reiniciar, iniciar } from "./tiempo.js";
 export {movimiento_Usuario};
 // elementos del html 
 document.getElementById("t1").addEventListener("click", elemento);
@@ -120,6 +121,7 @@ function movimiento(id){
 function elemento(event){
 // la función se encarga de escoger la pila con la propiedad event.target
     var id = event.target.id;
+    tiempo_Cargado();
     //se ejecutara siempre y cuando la torre 1 no este seleccionada
     if(!on_Fase2){
         //determinar cual fue la primera torre seleccionada
@@ -262,7 +264,8 @@ function actualizacion_Movimiento() {
 }
 //pintado de nivel completado
 export function usuario_Guio(){
-    movimientos_UsuarioGUI.innerHTML = "<strong>¡Ganaste!</strong><br>Tus movimientos en este juego fueron: " + movimiento_Usuario + "<br>Los movimientos para este nivel erán: " + guia_Usuario;
+    parar();
+    movimientos_UsuarioGUI.innerHTML = "<strong>¡Ganaste!</strong><br>Tus movimientos en este juego fueron: " + movimiento_Usuario + "<br>Los movimientos para este nivel erán: " + guia_Usuario + "<br>Tu tiempo tomado es: " + tiempo_Transcurrido;
 }
 //ejecución para los siguientes niveles
 function orden(){
@@ -273,7 +276,9 @@ function orden(){
     document.getElementById("siguiente").style.display = "none";
     document.getElementById("glass").style.display = "none";
     document.getElementById("confirmar").style.display = "block";
+    //reinicio de movimiento y tiempo
     movimiento_Usuario = 0;
+    reiniciar();
 }
 //se reinicia el nivel
 function reinicio_Nivel(){
