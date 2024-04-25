@@ -57,7 +57,7 @@
             
          <main>
             <section class="Contenedor Que_es_TCE" id="quienes-somos">
-                <h2 class="titulo">¿Quienes?</h2>
+                <h2 class="titulo">¿Quienes somos?</h2>
                 <div class="TCE">
                     <img src="imagenes/Marca.jpg" alt="" >
                         <div class="definicion">
@@ -79,52 +79,90 @@
                 <h2 class="titulo">Nuestros servicios</h2>
                 <div class="Contenedor_sobre_nosotros">
                     <img src="imagenes/img1.PNG" alt="" class="imagen_Sobre_Nos">
-                        <div class="nosotros">
-                            <h3><span>1</span>Calidad de vida</h3>
-                            <p>Buscamos una mejora y poder ayudar a tus hijos para una recuperación más pronta, con una manera divertida y saludable para ellos.</p>
-                            <h3><span>2</span>Desarrollo cognitivo</h3>
-                            <p>Desarrollamos una manera más practica y atractiva para tus hijos, permitiendo mejoras en varios aspectos neurologicos.<br>Como lo son la consentración, la manera para expresarce y como interacturar con su entorno</p>
-                        </div>
-                </div>
-            </section>
-
-            <section class="Contenedor diagnosticos">
-                <h2 class="titulo">Diagnosticos</h2>
-                <div class="Contenedor_diagnosticos">
-                    <img src="imagenes/img3.PNG" alt="" class="imagen_diagnos">
-                    <div class="Text_diagnostico">                      
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero totam neque non perspiciatis asperiores molestiae, dolorum officiis sit, molestias quod minima exercitationem laudantium cumque! Sapiente eligendi dolor id expedita officiis?</p>
+                    
+                    <div class="nosotros">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <h3>- Calidad de vida</h3>
+                                <p>Buscamos una mejora y poder ayudar a tus hijos para una recuperación más pronta, con una manera divertida y saludable para ellos.</p></li>
+                            <li class="list-group-item">
+                                <h3>- Desarrollo cognitivo</h3>
+                                <p>Desarrollamos una manera más practica y atractiva para tus hijos, permitiendo mejoras en varios aspectos neurologicos.<br>Como lo son la consentración, la manera para expresarce y como interacturar con su entorno</p>
+                            </li>
+                      </ul> 
                     </div>
                 </div>
             </section>
 
             <section id="nosotros">
-                <div class="Contenedor Testimonios">
-                    <h2 class="titulo">Contactenos</h2>
-                    <div class="Testimonios_usuarios">
-                        <div class="Testimonio_usuario">
-                            <img src="imagenes/nosotros/andres.png" alt="">
-                            <div class="Contenido_testimonio">
-                                <h4>Andres - Backend</h4>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, totam?</p>
+                <div class="container text-center Contenedor Testimonios">
+                    <div class="row">
+                        <h2 class="titulo">Equipo de desarrollo</h2>
+                      <div class="col">
+                          <!-- Card Andres -->
+                        <div class="card mb-3" style="max-width: 540px; background-color: #197657; color:  white">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                  <img src="imagenes/nosotros/andres.png" style="border-radius: 50%" class="img-fluid rounded-start mt-3" alt="perfil desarrollador backend">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body card-info">
+                                  <h5 class="card-title">Desarrollador Backend</h5>
+                                  <ul>
+                                      <li>Seguridad</li>
+                                      <li>Bases de datos</li>
+                                      <li>Logíca juegos</li>
+                                  </ul>
+                                  <p class="card-text"><small class="text-body-secondary" style="color: white"><strong>Andres Felipe Castellanos Vanegas</strong></small></p>
+                                </div>
+                              </div>
                             </div>
-                        </div>
-                        <div class="Testimonio_usuario">
-                            <img src="./imagenes/nosotros/luz.png" alt="">
-                            <div class="Contenido_testimonio">
-                                <h4>Luz - Backend</h4>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, totam?</p>
+                          </div>
+                      </div>
+                        <!-- Card luz -->
+                      <div class="col">
+                        <div class="card mb-3" style="max-width: 540px; background-color: #197657; color:  white">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                  <img src="./imagenes/nosotros/luz.png" style="border-radius: 50%" class="img-fluid rounded-start mt-3" alt="perfil product owner">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body card-info">
+                                  <h5 class="card-title">Product owner</h5>
+                                  <ul>
+                                      <li>Psicóloga</li>
+                                      <li>Analista de datos</li>
+                                      <li>Diseño de juegos</li>
+                                  </ul>
+                                  <p class="card-text"><small class="text-body-secondary" style="color: white"><strong>Luz Adriana Moreno Cardoso</strong></small></p>
+                                </div>
+                              </div>
                             </div>
-                        </div>
-                        <div class="Testimonio_usuario">
-                            <img src="./imagenes/nosotros/juan.png" alt="">
-                            <div class="Contenido_testimonio">
-                                <h4>Juan - Frontend</h4>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, totam?</p>
+                          </div>
+                      </div>
+                      <div class="col">
+                        <!-- Card Juan -->
+                        <div class="card mb-3" style="max-width: 540px; background-color: #197657; color:  white">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                  <img src="./imagenes/nosotros/juan.jpg" style="border-radius: 50%;" class="img-fluid rounded-start " alt="perfil scrum master">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body card-info">
+                                  <h5 class="card-title">Scrum master</h5>
+                                  <ul>
+                                      <li>Desarrollo de juegos</li>
+                                      <li>Frontend</li>
+                                      <li>Mercado</li>
+                                  </ul>
+                                  <p class="card-text"><small class="text-body-secondary" style="color: white"><strong>Juan Felipe Delgadillo Vanehas</strong></small></p>
+                                </div>
+                              </div>
                             </div>
-                        </div>
+                          </div>
+                      </div>
                     </div>
-                </div>
+                  </div>
             </section>
         </main>
         <footer>
