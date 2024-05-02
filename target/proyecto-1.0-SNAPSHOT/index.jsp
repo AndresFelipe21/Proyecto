@@ -27,13 +27,13 @@
                         <a class="nav-link" href="#quienes-somos">¿Quienes somos?</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#que-es-tce">Nuestros servicios</a>
+                        <a class="nav-link" href="#servicios">Nuestros servicios</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#nosotros">Contactenos</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="./paginas/ingresoRegistro.jsp">Ingresar</a>
+                          <a class="nav-link" href="./paginas/Ingreso.jsp">Ingresar</a>
                       </li>
                     </ul>
                   </div>
@@ -75,21 +75,26 @@
                 </div>
             </section>
 
-            <section class="Contenedor sobre_nosotros">
+            <section class="Contenedor sobre_nosotros" id="servicios">
                 <h2 class="titulo">Nuestros servicios</h2>
                 <div class="Contenedor_sobre_nosotros">
-                    <img src="imagenes/img1.PNG" alt="" class="imagen_Sobre_Nos">
-                    
-                    <div class="nosotros">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <h3>- Calidad de vida</h3>
-                                <p>Buscamos una mejora y poder ayudar a tus hijos para una recuperación más pronta, con una manera divertida y saludable para ellos.</p></li>
-                            <li class="list-group-item">
-                                <h3>- Desarrollo cognitivo</h3>
-                                <p>Desarrollamos una manera más practica y atractiva para tus hijos, permitiendo mejoras en varios aspectos neurologicos.<br>Como lo son la consentración, la manera para expresarce y como interacturar con su entorno</p>
-                            </li>
-                      </ul> 
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            <img src="imagenes/img1.PNG" alt="niños pintando" style="width: 60%">
+                        </div>
+                        <div class="col">
+                            <div class="nosotros">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <h3>- Calidad de vida</h3>
+                                        <p>Buscamos una mejora y poder ayudar a tus hijos para una recuperación más pronta, con una manera divertida y saludable para ellos.</p></li>
+                                    <li class="list-group-item">
+                                        <h3>- Desarrollo cognitivo</h3>
+                                        <p>Desarrollamos una manera más practica y atractiva para tus hijos, permitiendo mejoras en varios aspectos neurologicos.<br>Como lo son la consentración, la manera para expresarce y como interacturar con su entorno</p>
+                                    </li>
+                              </ul> 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -106,7 +111,7 @@
                                   <img src="imagenes/nosotros/andres.png" style="border-radius: 50%" class="img-fluid rounded-start mt-3" alt="perfil desarrollador backend">
                               </div>
                               <div class="col-md-8">
-                                <div class="card-body card-info">
+                                <div class="card-body card-info w-100" style="height: 190px">
                                   <h5 class="card-title">Desarrollador Backend</h5>
                                   <ul>
                                       <li>Seguridad</li>
@@ -127,7 +132,7 @@
                                   <img src="./imagenes/nosotros/luz.png" style="border-radius: 50%" class="img-fluid rounded-start mt-3" alt="perfil product owner">
                               </div>
                               <div class="col-md-8">
-                                <div class="card-body card-info">
+                                  <div class="card-body card-info" style="height: 190px">
                                   <h5 class="card-title">Product owner</h5>
                                   <ul>
                                       <li>Psicóloga</li>
@@ -148,12 +153,12 @@
                                   <img src="./imagenes/nosotros/juan.jpg" style="border-radius: 50%;" class="img-fluid rounded-start " alt="perfil scrum master">
                               </div>
                               <div class="col-md-8">
-                                <div class="card-body card-info">
+                                <div class="card-body card-info h-100">
                                   <h5 class="card-title">Scrum master</h5>
                                   <ul>
                                       <li>Desarrollo de juegos</li>
                                       <li>Frontend</li>
-                                      <li>Mercado</li>
+                                      <li>Mercadeo</li>
                                   </ul>
                                   <p class="card-text"><small class="text-body-secondary" style="color: white"><strong>Juan Felipe Delgadillo Vanehas</strong></small></p>
                                 </div>
